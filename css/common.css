@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: black;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    height: 28px;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 58px); /* Subtract header height */
+    padding: 0;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.transformation {
+    text-align: center;
+    padding: 10px;
+    height: calc(8% - 30px);
+}
+
+.transformation .layui-input {
+    border: 1px solid;
+    width: 100%;
+}
+
+.editor-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.editor {
+    flex: 1;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttons .layui-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 0;
+    margin-left: 0;
+}
+
+.editor-container-parent {
+    display: flex;
+    height: 90%;
+}
+
+.button-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}

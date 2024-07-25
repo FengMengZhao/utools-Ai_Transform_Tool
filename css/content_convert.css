@@ -1,0 +1,94 @@
+/* 引用公共样式 */
+@import url('common.css');
+
+/* content_convert 特定样式 */
+body {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    color: #333;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.editor {
+    flex: 1;
+    height: auto;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    /*background-color: rgba(161, 140, 209, 0.2);*/
+}
+
+.buttons .layui-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #a18cd1;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.buttons .layui-btn:hover {
+    background-color: #8e7ac0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.transformation {
+    margin-bottom: 10px;
+}
+
+.transformation .layui-input {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #a18cd1;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.transformation .layui-input:focus {
+    box-shadow: 0 0 0 2px rgba(161, 140, 209, 0.3);
+    outline: none;
+}
+
+.editor textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    transition: all 0.3s ease;
+}
+
+.editor textarea:focus {
+    border-color: #a18cd1;
+    box-shadow: 0 0 0 2px rgba(161, 140, 209, 0.3);
+    outline: none;
+}
+
+.button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

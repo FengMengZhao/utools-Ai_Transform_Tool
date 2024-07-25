@@ -1,0 +1,31 @@
+{
+    "pluginName": "AI Transform Enhancer",
+    "description": "通过AI大模型技术，将平时繁琐的事务交给AI做增强转换处理，达到chat即所得。",
+    "author": "fxhj",
+    "homepage": "https://www.ai-reading.me",
+    "version": "0.0.1",
+    "logo": "logo.png",
+    "main": "content_convert.html",
+    "features": [
+      {
+        "code": "AiEnhancedTxtTransform",
+        "explain": "AI增强文本转换",
+        "cmds": [
+          "AI文本转换",
+          "文本转换",
+          "AI正则转换",
+          {
+            "type": "over",
+            "label": "AI增强文本转换"
+          }
+        ]
+      }
+    ],
+    "platform": ["win32", "darwin", "linux"],
+    "pluginSetting": {
+      "single": true
+    },
+    "dependencies": {
+      "utools-api-types": "^2.3.0"
+    }
+  }

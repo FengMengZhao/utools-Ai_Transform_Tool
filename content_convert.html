@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AI驱动文本转换</title>
+    <link rel="stylesheet" href="layui/css/layui.min.css">
+    <link rel="stylesheet" href="css/content_convert.css">
+</head>
+<body>
+<div class="transformation">
+    <input type="text" id="transformationRule" class="layui-input" placeholder="AI驱动，自然语言转换文本（例如：行首加序号）">
+</div>
+
+<div class="editor-container-parent">
+    <div class="editor-container">
+        <div class="editor">
+            <textarea id="inputArea" placeholder="输入..."></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="copyButton" class="layui-btn layui-btn-primary layui-icon layui-icon-file" title="复制输出"></button>
+            <button id="processButton" class="layui-btn layui-btn-normal layui-icon layui-icon-transfer" title="转换"></button>
+            <button id="swapButton" class="layui-btn layui-btn-primary layui-icon layui-icon-return" title="切换"></button>
+            <button id="clearButton" class="layui-btn layui-btn-danger layui-icon layui-icon-delete" title="清除输入"></button>
+        </div>
+
+        <div class="editor">
+            <textarea id="outputArea" readonly placeholder="输出..."></textarea>
+        </div>
+    </div>
+</div>
+
+
+<script src="layui/layui.min.js"></script>
+<script src="js/content_convert.js" type="module"></script>
+</body>
+</html>
